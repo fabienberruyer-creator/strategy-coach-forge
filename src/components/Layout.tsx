@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logoMs from "@/assets/logo-ms.png";
 
 const navLinks = [
   { to: "/", label: "Accueil" },
@@ -22,8 +23,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     <div className="min-h-screen flex flex-col">
       <header className="fixed top-0 left-0 right-0 z-50 bg-anthracite/95 backdrop-blur-md border-b border-purple-deep/20">
         <div className="container mx-auto flex items-center justify-between h-16 px-6">
-          <Link to="/" className="font-heading font-bold text-xl text-off-white tracking-wide">
-            MANAGEMENT <span className="text-fuchsia">SKILLS</span>
+          <Link to="/" className="flex items-center gap-2.5">
+            <img src={logoMs} alt="Management Skills" className="h-9 w-9 rounded-full" />
+            <span className="font-heading font-bold text-xl text-off-white tracking-wide">
+              MANAGEMENT <span className="text-fuchsia">SKILLS</span>
+            </span>
           </Link>
 
           <nav className="hidden lg:flex items-center gap-1">
@@ -76,11 +80,14 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <h4 className="font-heading font-bold text-off-white text-lg mb-3">
-                MANAGEMENT <span className="text-fuchsia">SKILLS</span>
-              </h4>
+              <div className="flex items-center gap-2.5 mb-3">
+                <img src={logoMs} alt="Management Skills" className="h-8 w-8 rounded-full" />
+                <h4 className="font-heading font-bold text-off-white text-lg">
+                  MANAGEMENT <span className="text-fuchsia">SKILLS</span>
+                </h4>
+              </div>
               <p className="text-sm leading-relaxed">
-                Cabinet d'expertise en leadership, stratégie et transformation des organisations.
+                Cabinet d'expertise en leadership, stratégie et transformation des organisations. Conseil, formation et coaching exécutif au service des dirigeants et des managers.
               </p>
             </div>
             <div>
