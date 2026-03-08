@@ -12,6 +12,7 @@ import Coaching from "./pages/Coaching";
 import Entrepreneuriat from "./pages/Entrepreneuriat";
 import Formations from "./pages/Formations";
 import ThemeDetail from "./pages/ThemeDetail";
+import Universites from "./pages/Universites";
 import Reseau from "./pages/Reseau";
 import Blog from "./pages/Blog";
 import About from "./pages/About";
