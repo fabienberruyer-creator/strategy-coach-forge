@@ -9,6 +9,7 @@ import Vision from "./pages/Vision";
 import Expertises from "./pages/Expertises";
 import Strategie from "./pages/Strategie";
 import Coaching from "./pages/Coaching";
+import Entrepreneuriat from "./pages/Entrepreneuriat";
 import Reseau from "./pages/Reseau";
 import Blog from "./pages/Blog";
 import About from "./pages/About";
@@ -31,6 +32,7 @@ const App = () => (
             <Route path="/expertises" element={<Expertises />} />
             <Route path="/strategie" element={<Strategie />} />
             <Route path="/coaching" element={<Coaching />} />
+            <Route path="/entrepreneuriat" element={<Entrepreneuriat />} />
             <Route path="/reseau" element={<Reseau />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/a-propos" element={<About />} />
