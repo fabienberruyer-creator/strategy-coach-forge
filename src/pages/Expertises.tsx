@@ -155,7 +155,7 @@ const Expertises = () => {
         <div className="container mx-auto max-w-5xl">
           <div className="space-y-12">
             {expertises.map((exp, i) => (
-              <div key={i} className="animate-on-scroll" style={{ transitionDelay: `${i * 40}ms` }}>
+              <div key={i} id={exp.slug} className="animate-on-scroll scroll-mt-24" style={{ transitionDelay: `${i * 40}ms` }}>
                 <div className="grid md:grid-cols-12 gap-6 items-start">
                   <div className="md:col-span-1 flex md:justify-center">
                     <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
