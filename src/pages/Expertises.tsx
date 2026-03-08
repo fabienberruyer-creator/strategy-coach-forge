@@ -1,3 +1,4 @@
+import React from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import useSEO from "@/hooks/useSEO";
 import {
