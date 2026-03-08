@@ -28,7 +28,7 @@ const themes = [
   { icon: Award, label: "Management éthique" },
   { icon: BookOpen, label: "Culture économique, managériale et juridique" },
   { icon: Scale, label: "Négociation" },
-  { icon: BarChart3, label: "Value Selling" },
+  
   { icon: Globe, label: "Culture générale africaine" },
 ];
 
