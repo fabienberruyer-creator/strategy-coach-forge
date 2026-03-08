@@ -2,7 +2,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import useSEO from "@/hooks/useSEO";
 import {
   Target, TrendingUp, Shield, BarChart3, Lightbulb, Globe,
-  RefreshCw, ArrowRight, Users, Briefcase, UserCheck, Scale, Brain, Crosshair
+  RefreshCw, ArrowRight, Users, Briefcase, UserCheck, Scale, Brain, Crosshair, BookOpen
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
