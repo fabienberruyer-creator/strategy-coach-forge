@@ -10,6 +10,7 @@ import Expertises from "./pages/Expertises";
 import Strategie from "./pages/Strategie";
 import Coaching from "./pages/Coaching";
 import Entrepreneuriat from "./pages/Entrepreneuriat";
+import Formations from "./pages/Formations";
 import Reseau from "./pages/Reseau";
 import Blog from "./pages/Blog";
 import About from "./pages/About";
@@ -33,6 +34,7 @@ const App = () => (
             <Route path="/strategie" element={<Strategie />} />
             <Route path="/coaching" element={<Coaching />} />
             <Route path="/entrepreneuriat" element={<Entrepreneuriat />} />
+            <Route path="/formations" element={<Formations />} />
             <Route path="/reseau" element={<Reseau />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/a-propos" element={<About />} />

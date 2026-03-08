@@ -1,4 +1,5 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import useSEO from "@/hooks/useSEO";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import networkImage from "@/assets/network-experts.jpg";
@@ -13,7 +14,10 @@ const domaines = [
 
 const Reseau = () => {
   useScrollAnimation();
-
+  useSEO({
+    title: "Réseau d'experts – Management Skills | Écosystème de compétences",
+    description: "Management Skills s'appuie sur un réseau d'experts reconnus pour répondre aux problématiques complexes des organisations. Lille, Hauts-de-France.",
+  });
   return (
     <>
       <section className="section-padding section-dark">
