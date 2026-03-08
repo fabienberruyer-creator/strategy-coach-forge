@@ -133,7 +133,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             </div>
           </div>
           <div className="border-t border-off-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-xs">© {new Date().getFullYear()} Management Skills. Tous droits réservés.</p>
+            <p className="text-xs">© 2020 Management Skills. Tous droits réservés.</p>
             <Link to="/mentions-legales" className="text-xs hover:text-off-white transition-colors">
               Mentions légales
             </Link>
