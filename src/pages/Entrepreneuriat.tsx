@@ -1,7 +1,11 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import useSEO from "@/hooks/useSEO";
-import { Rocket, Target, BarChart3, Lightbulb, Search, ArrowRight, CheckCircle, TrendingUp, Users } from "lucide-react";
+import { Target, BarChart3, Lightbulb, Search, ArrowRight, CheckCircle, TrendingUp, Users } from "lucide-react";
 import { Link } from "react-router-dom";
+import logoEntreprendsFeminin from "@/assets/logo-entreprends-feminin.png";
+import logoImmotech from "@/assets/logo-immotech.png";
+import logoSportpreneuriat from "@/assets/logo-sportpreneuriat.png";
+import logoDreamers from "@/assets/logo-dreamers.png";
 
 const accompagnements = [
   {
@@ -111,34 +115,31 @@ const Entrepreneuriat = () => {
             <div className="grid md:grid-cols-2 gap-6">
               {[
                 {
-                  icon: Rocket,
+                  logo: logoEntreprendsFeminin,
                   name: "ENTREPRENDS AU FÉMININ",
                   desc: "Parcours d'accompagnement à l'entrepreneuriat dédié aux femmes. Un programme complet pour structurer son projet, développer sa posture de dirigeante et accéder à un réseau de soutien engagé.",
                 },
                 {
-                  icon: Lightbulb,
+                  logo: logoImmotech,
                   name: "IMMOTECH LAB",
                   desc: "Programme d'entrepreneuriat dans le secteur de la Property Tech. Innovation immobilière, modèles disruptifs et accompagnement des fondateurs qui transforment la filière.",
                 },
                 {
-                  icon: TrendingUp,
+                  logo: logoSportpreneuriat,
                   name: "SPORT'PRENEURIAT",
                   desc: "Programme d'entrepreneuriat dans le secteur du sport, imbriqué aux enjeux RSE. Concilier performance économique, impact social et responsabilité environnementale.",
                 },
                 {
-                  icon: Users,
+                  logo: logoDreamers,
                   name: "LES DREAMERS",
                   desc: "Parcours d'accompagnement à l'entrepreneuriat dans les zones rurales et les quartiers. Révéler les talents là où ils sont et leur donner les outils pour entreprendre.",
                 },
               ].map((prog, i) => (
                 <div key={i} className="bg-card rounded-2xl p-6 border border-border animate-on-scroll" style={{ transitionDelay: `${i * 80}ms` }}>
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
-                      <prog.icon className="w-5 h-5 text-primary" />
-                    </div>
-                    <h3 className="font-heading font-bold text-foreground text-sm">{prog.name}</h3>
+                  <div className="flex items-center justify-center mb-4">
+                    <img src={prog.logo} alt={prog.name} className="h-16 object-contain" />
                   </div>
-                  <p className="text-foreground/70 font-body text-sm leading-relaxed">{prog.desc}</p>
+                  <p className="text-foreground/70 font-body text-sm leading-relaxed text-center">{prog.desc}</p>
                 </div>
               ))}
             </div>
