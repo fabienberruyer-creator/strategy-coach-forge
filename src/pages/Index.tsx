@@ -382,7 +382,7 @@ const Index = () => {
             },
             address: {
               "@type": "PostalAddress",
-              addressLocality: "Pérenchies",
+              addressLocality: "Lille",
               addressRegion: "Hauts-de-France",
               postalCode: "59840",
               addressCountry: "FR",
