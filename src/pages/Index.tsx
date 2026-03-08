@@ -40,14 +40,14 @@ const faqItems = [
   { q: "Quels sujets de conférence proposez-vous ?", a: "Leadership contemporain, management à l'ère de l'IA, gouvernance, recrutement, Value Selling, management éthique, égalité professionnelle, gestion de crise et entrepreneuriat." },
   { q: "Intervenez-vous en entreprise et dans les écoles ?", a: "Oui. Management Skills intervient aussi bien en entreprise (séminaires, formations, ateliers stratégiques) que dans l'enseignement supérieur (écoles de commerce, universités, institutions)." },
   { q: "Proposez-vous des formations en leadership et management ?", a: "Oui. Management Skills est un organisme de formation déclaré (n° 32 59 13455 59). Nos formations couvrent le leadership, la stratégie, le management, l'entrepreneuriat et la performance commerciale." },
-  { q: "Où êtes-vous basé et intervenez-vous partout en France ?", a: "Basé à Pérenchies, près de Lille (Hauts-de-France), Management Skills intervient sur l'ensemble du territoire français et à l'international." },
+  { q: "Où êtes-vous basé et intervenez-vous partout en France ?", a: "Basé à Lille (Hauts-de-France), Management Skills intervient sur l'ensemble du territoire français et à l'international." },
 ];
 
 const Index = () => {
   useScrollAnimation();
   useSEO({
     title: "Management Skills – Coach dirigeant, consultant stratégie et management | Lille, Hauts-de-France",
-    description: "Cabinet d'expertise en leadership, stratégie et management. Accompagnement de dirigeants, entrepreneurs et organisations. Conseil, formation, coaching exécutif. Lille, Pérenchies, Hauts-de-France.",
+    description: "Cabinet d'expertise en leadership, stratégie et management. Accompagnement de dirigeants, entrepreneurs et organisations. Conseil, formation, coaching exécutif. Lille, Hauts-de-France.",
   });
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -219,7 +219,7 @@ const Index = () => {
               </p>
               <p className="text-foreground/70 font-body leading-relaxed mb-6">
                 Certifié par les Nations Unies pour la promotion de l'égalité femmes-hommes.
-                Intervenant en écoles de commerce et institutions. Basé à Pérenchies, près de Lille (Hauts-de-France).
+                Intervenant en écoles de commerce et institutions. Basé à Lille (Hauts-de-France).
               </p>
               <Link to="/a-propos" className="text-primary font-heading font-semibold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all">
                 Découvrir le parcours complet <ArrowRight className="w-4 h-4" />
@@ -382,14 +382,14 @@ const Index = () => {
             },
             address: {
               "@type": "PostalAddress",
-              addressLocality: "Pérenchies",
+              addressLocality: "Lille",
               addressRegion: "Hauts-de-France",
               postalCode: "59840",
               addressCountry: "FR",
             },
             telephone: "+33781333909",
             email: "hello@mmanagement.fr",
-            areaServed: ["Lille", "Pérenchies", "Hauts-de-France", "France"],
+            areaServed: ["Lille", "Hauts-de-France", "France"],
             serviceType: ["Coaching de dirigeants", "Conseil en stratégie", "Formation en leadership", "Conférences management"],
           }),
         }}

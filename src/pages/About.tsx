@@ -83,7 +83,7 @@ const About = () => {
                 il structure et il accompagne la mise en mouvement.
               </p>
               <p className="text-foreground/80 font-body text-lg leading-relaxed">
-                Basé à Pérenchies, près de Lille (Hauts-de-France), il intervient sur l'ensemble
+                Basé à Lille (Hauts-de-France), il intervient sur l'ensemble
                 du territoire français et à l'international.
               </p>
             </div>
