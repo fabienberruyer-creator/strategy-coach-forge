@@ -49,7 +49,7 @@ const Formations = () => {
               Formations & <span className="text-fuchsia">Conférences</span>
             </h1>
             <p className="text-off-white/70 font-body text-lg leading-relaxed">
-              Fabien Berruyer intervient en tant que conférencier, formateur et intervenant académique
+              Nous intervenons en tant que conférencier, formateur et intervenant académique
               sur les enjeux contemporains du management, du leadership et de la transformation des organisations.
             </p>
           </div>
