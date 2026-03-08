@@ -60,6 +60,13 @@ const About = () => {
                   <MessageCircle className="w-4 h-4" />
                   WhatsApp
                 </a>
+                <a
+                  href="mailto:direction@mmanagement.fr"
+                  className="w-full inline-flex items-center justify-center gap-2 text-sm px-6 py-3 rounded-md font-semibold text-white bg-[#EA4335] hover:bg-[#d33426] transition-colors"
+                >
+                  <Mail className="w-4 h-4" />
+                  Email
+                </a>
               </div>
             </div>
             <div className="md:col-span-3 animate-on-scroll" style={{ transitionDelay: "150ms" }}>
