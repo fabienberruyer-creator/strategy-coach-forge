@@ -6,10 +6,10 @@ import logoMs from "@/assets/logo-ms.png";
 const navLinks = [
   { to: "/", label: "Accueil" },
   { to: "/expertises", label: "Expertises" },
+  { to: "/formations", label: "Formations" },
+  { to: "/strategie", label: "Stratégie" },
   { to: "/coaching", label: "Dirigeants" },
   { to: "/entrepreneuriat", label: "Entrepreneurs" },
-  { to: "/strategie", label: "Stratégie" },
-  { to: "/formations", label: "Formations" },
   { to: "/universites", label: "Enseignement supérieur" },
   { to: "/vision", label: "Vision" },
   { to: "/a-propos", label: "À propos" },
