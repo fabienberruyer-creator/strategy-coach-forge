@@ -1,33 +1,6 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { User, Compass, Briefcase, CheckCircle, ArrowRight, AlertTriangle, Flame, Brain, HeartCrack, ShieldAlert, Clock } from "lucide-react";
+import { User, Compass, Briefcase, CheckCircle, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-
-const painPoints = [
-  {
-    icon: Brain,
-    pain: "Solitude décisionnelle",
-    desc: "Vous portez seul des décisions à fort enjeu, sans espace confidentiel pour challenger vos réflexions.",
-    impact: "Risque de biais cognitifs, décisions sous-optimales et accumulation de stress pouvant mener à l'épuisement.",
-  },
-  {
-    icon: HeartCrack,
-    pain: "Perte d'impact managérial",
-    desc: "Votre leadership s'essouffle : les équipes ne suivent plus, la mobilisation faiblit, le message ne passe plus.",
-    impact: "Désengagement des collaborateurs, perte d'autorité naturelle et dégradation du climat social.",
-  },
-  {
-    icon: ShieldAlert,
-    pain: "Gestion des situations sensibles",
-    desc: "Conflits, restructurations, pressions du board — vous manquez d'un regard extérieur pour naviguer ces eaux troubles.",
-    impact: "Escalade des tensions, décisions précipitées et dommages relationnels parfois irréparables.",
-  },
-  {
-    icon: Clock,
-    pain: "Transitions professionnelles mal préparées",
-    desc: "Prise de poste, changement de périmètre ou pivot de carrière — ces moments charnières sont souvent sous-estimés.",
-    impact: "Échec d'intégration, perte de crédibilité dans les 100 premiers jours et opportunités manquées.",
-  },
-];
 
 const formats = [
   { icon: User, title: "Coaching individuel", desc: "Un accompagnement confidentiel et personnalisé pour les dirigeants et managers qui souhaitent renforcer leur posture, clarifier leur vision et maximiser leur impact." },
@@ -67,55 +40,23 @@ const Coaching = () => {
       <section className="section-padding">
         <div className="container mx-auto max-w-3xl">
           <div className="animate-on-scroll">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-6">
+              Pourquoi un coaching exécutif ?
+            </h2>
             <p className="text-lg font-body leading-relaxed text-foreground/80 mb-4">
-              Diriger implique des décisions complexes, parfois solitaires, souvent à fort enjeu.
-              Les dirigeants les plus performants sont ceux qui savent s'entourer d'un regard extérieur
-              exigeant et bienveillant pour challenger leurs réflexions et renforcer leur leadership.
+              Diriger, c'est décider. Et décider, c'est souvent être seul face à des enjeux qui engagent l'avenir d'une organisation, d'une équipe, d'une trajectoire professionnelle. Les dirigeants les plus lucides le savent : cette solitude décisionnelle n'est pas une fatalité, c'est un signal. Le signal qu'il est temps de s'entourer d'un regard extérieur exigeant.
+            </p>
+            <p className="text-lg font-body leading-relaxed text-foreground/80 mb-4">
+              Car les conséquences d'un leadership qui s'essouffle sont rarement spectaculaires — elles sont insidieuses. Les équipes décrochent sans bruit. Les talents partent sans prévenir. Les décisions s'accumulent sans cohérence. Et un jour, le dirigeant réalise que son impact n'est plus à la hauteur de ses ambitions.
+            </p>
+            <p className="text-lg font-body leading-relaxed text-foreground/80 mb-4">
+              Il y a aussi ces moments charnières — une prise de poste, un conflit de gouvernance, une restructuration, un pivot stratégique — où l'enjeu est trop important pour improviser. Ce sont des moments qui exigent de la méthode, du recul et une capacité à voir ce que l'on ne voit plus quand on est au cœur de l'action.
             </p>
             <p className="text-lg font-body leading-relaxed text-foreground/80 mb-10">
-              Le coaching exécutif proposé par Management Skills est un accompagnement structuré,
-              confidentiel et orienté résultats, conçu pour les dirigeants, cadres dirigeants et entrepreneurs
-              qui refusent le statu quo.
+              Le coaching exécutif proposé par Management Skills est un accompagnement structuré, confidentiel et orienté résultats. Il ne s'agit pas de thérapie ni de développement personnel généraliste. C'est un travail de fond sur la posture, la décision et l'impact — conçu pour des dirigeants qui refusent le statu quo.
             </p>
           </div>
-        </div>
-      </section>
 
-      {/* Pain points */}
-      <section className="section-padding bg-destructive/5">
-        <div className="container mx-auto max-w-4xl">
-          <div className="text-center mb-10 animate-on-scroll">
-            <p className="text-fuchsia font-heading font-semibold text-sm uppercase tracking-widest mb-3">Pourquoi le coaching ?</p>
-            <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4">
-              Les situations qui appellent un accompagnement
-            </h2>
-          </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            {painPoints.map((item, i) => (
-              <div key={i} className="bg-background rounded-2xl p-6 border border-border animate-on-scroll" style={{ transitionDelay: `${i * 100}ms` }}>
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-destructive/10 flex items-center justify-center">
-                    <item.icon className="w-6 h-6 text-destructive" />
-                  </div>
-                  <div>
-                    <h3 className="font-heading font-bold text-foreground mb-1">{item.pain}</h3>
-                    <p className="text-sm text-muted-foreground font-body leading-relaxed mb-2">{item.desc}</p>
-                    <div className="flex items-start gap-2">
-                      <Flame className="w-4 h-4 text-orange-500 flex-shrink-0 mt-0.5" />
-                      <p className="text-xs font-body text-foreground/60">
-                        <span className="font-semibold">Impact :</span> {item.impact}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section-padding">
-        <div className="container mx-auto max-w-3xl">
           <div className="mb-12">
             <h2 className="font-heading text-2xl font-bold text-foreground mb-6 animate-on-scroll">
               Ce que le coaching vous apporte
