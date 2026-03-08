@@ -27,6 +27,9 @@ const WelcomePopup = () => {
           <h2 className="font-heading text-xl md:text-2xl text-off-white">
             L'équipe <span className="text-fuchsia">MANAGEMENT SKILLS</span> vous souhaite la bienvenue
           </h2>
+          <p className="text-sm tracking-widest text-off-white/50 font-heading uppercase">
+            Leadership • Stratégie • Management • Entrepreneuriat
+          </p>
           <Button onClick={handleClose} className="btn-hero-primary mt-2">
             Découvrir
           </Button>
