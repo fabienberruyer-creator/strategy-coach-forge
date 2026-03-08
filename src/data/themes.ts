@@ -302,6 +302,50 @@ export const themesData: ThemeData[] = [
     ],
     formats: ["Conférence", "Intervention académique", "Formation"],
   },
+  {
+    slug: "etude-de-marche",
+    icon: Search,
+    label: "Étude de marché",
+    title: "Étude de marché",
+    subtitle: "Valider son marché et structurer son approche commerciale avec méthode",
+    description: "L'étude de marché est le socle de toute décision stratégique pertinente. Qu'il s'agisse de lancer un nouveau produit, de se positionner sur un segment ou de valider une intuition entrepreneuriale, l'analyse rigoureuse du marché permet de réduire l'incertitude et de construire une offre alignée avec la réalité du terrain.",
+    paragraphs: [
+      "Trop de projets échouent faute d'avoir validé leur marché en amont. L'enthousiasme entrepreneurial ou l'expertise métier ne suffisent pas : il faut confronter ses hypothèses à la réalité, comprendre les dynamiques concurrentielles, identifier les segments porteurs et quantifier le potentiel commercial avant d'investir.",
+      "L'étude de marché n'est pas un exercice académique réservé aux grandes entreprises. C'est un outil pragmatique, accessible à tout porteur de projet ou dirigeant qui souhaite prendre des décisions fondées sur des données plutôt que sur des intuitions. Elle structure la réflexion, réduit les risques et accélère la prise de décision.",
+      "Nous formons les entrepreneurs, dirigeants et équipes commerciales aux méthodologies d'étude de marché : analyse de l'environnement concurrentiel, segmentation et ciblage, étude qualitative et quantitative, validation du product-market fit, et construction d'une stratégie de go-to-market fondée sur des données fiables.",
+    ],
+    keyPoints: [
+      "Méthodologie d'étude de marché : qualitative et quantitative",
+      "Analyse concurrentielle et positionnement stratégique",
+      "Segmentation, ciblage et identification des marchés porteurs",
+      "Validation du product-market fit et test d'hypothèses",
+      "Construction d'une stratégie de go-to-market data-driven",
+      "Outils et ressources pour mener une étude de marché efficace",
+    ],
+    formats: ["Formation", "Masterclass", "Atelier stratégique"],
+  },
+  {
+    slug: "management-fait-religieux",
+    icon: Building,
+    label: "Management du fait religieux",
+    title: "Management du fait religieux",
+    subtitle: "Aborder le fait religieux en entreprise avec méthode, droit et discernement",
+    description: "Le fait religieux en entreprise est une réalité que les managers ne peuvent plus ignorer. Entre droit du travail, principe de laïcité, liberté de conscience et exigences opérationnelles, les situations concrètes nécessitent des réponses claires, juridiquement fondées et managérialement adaptées.",
+    paragraphs: [
+      "Les managers sont de plus en plus confrontés à des situations liées au fait religieux : demandes d'aménagement de planning, port de signes religieux, pratiques alimentaires, prières sur le lieu de travail. Ces situations, si elles ne sont pas traitées avec méthode, peuvent générer des tensions, des incompréhensions et des risques juridiques pour l'organisation.",
+      "Le cadre juridique français est précis mais complexe : liberté de conscience, principe de non-discrimination, obligations de sécurité, neutralité dans le secteur public vs. restrictions encadrées dans le secteur privé. Les managers ont besoin de repères clairs pour agir avec discernement, sans surréagir ni laisser-faire.",
+      "Nous formons les dirigeants et managers à appréhender le fait religieux en entreprise de manière sereine et structurée : cadre juridique applicable, critères de décision, posture managériale adaptée, gestion des demandes individuelles et prévention des tensions collectives. Une approche pragmatique, fondée sur le droit et l'expérience de terrain.",
+    ],
+    keyPoints: [
+      "Cadre juridique du fait religieux en entreprise : droits et obligations",
+      "Principe de laïcité, liberté de conscience et non-discrimination",
+      "Gestion des demandes individuelles : méthode et critères de décision",
+      "Prévention des tensions et construction du vivre-ensemble",
+      "Posture managériale : entre fermeté sur les règles et respect des personnes",
+      "Études de cas et mises en situation concrètes",
+    ],
+    formats: ["Formation", "Conférence", "Séminaire"],
+  },
 ];
 
 export const getThemeBySlug = (slug: string): ThemeData | undefined =>
