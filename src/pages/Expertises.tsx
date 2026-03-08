@@ -2,7 +2,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import useSEO from "@/hooks/useSEO";
 import {
   Target, TrendingUp, Shield, BarChart3, Lightbulb, Globe,
-  RefreshCw, ArrowRight, Users, Briefcase, UserCheck, Scale, Brain, Crosshair
+  RefreshCw, ArrowRight, Users, Briefcase, UserCheck, Scale, Brain, Crosshair, BookOpen
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -78,6 +78,24 @@ const expertises = [
     title: "IA & transformation du travail",
     problems: "L'intelligence artificielle transforme les métiers, les compétences et les modes d'organisation. La plupart des dirigeants n'ont ni la grille de lecture ni le recul nécessaires pour anticiper ces mutations.",
     benefits: "Comprendre l'impact de l'IA sur le management et les organisations. Préparer les équipes, adapter les pratiques et transformer la disruption technologique en avantage stratégique.",
+  },
+  {
+    icon: BookOpen,
+    title: "Culture économique, managériale et juridique",
+    problems: "Les décideurs évoluent dans des environnements de plus en plus complexes où les dimensions économiques, managériales et juridiques s'entremêlent. Un déficit de culture transversale conduit à des décisions partielles et risquées.",
+    benefits: "Développer une vision intégrée des enjeux économiques, managériaux et juridiques. Former les dirigeants et étudiants à une lecture systémique des organisations et de leur environnement.",
+  },
+  {
+    icon: Crosshair,
+    title: "Négociation",
+    problems: "La négociation est souvent réduite à un rapport de force ou à une simple question de prix. Les équipes manquent de méthode, cèdent trop vite ou rigidifient les échanges au détriment de la relation commerciale.",
+    benefits: "Structurer les approches de négociation, développer l'écoute stratégique et la capacité à construire des accords durables qui préservent la valeur et la relation.",
+  },
+  {
+    icon: Globe,
+    title: "Culture générale africaine",
+    problems: "L'Afrique est un continent en transformation rapide, mais les cadres dirigeants et les étudiants en manquent souvent une compréhension fine : dynamiques économiques, enjeux géopolitiques, diversité culturelle et opportunités stratégiques restent méconnus.",
+    benefits: "Développer une connaissance approfondie des réalités africaines contemporaines : économie, gouvernance, entrepreneuriat, cultures et dynamiques sociales. Un atout stratégique pour les organisations tournées vers l'international.",
   },
 ];
 
