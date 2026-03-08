@@ -1,5 +1,5 @@
 import {
-  Target, Users, Shield, BarChart3, Brain, Lightbulb, Mic, Scale, Globe, Award, BookOpen
+  Target, Users, Shield, BarChart3, Brain, Lightbulb, Mic, Scale, Globe, Award, BookOpen, Search, Building
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
