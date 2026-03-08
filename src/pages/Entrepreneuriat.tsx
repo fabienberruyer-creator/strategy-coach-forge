@@ -1,7 +1,11 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import useSEO from "@/hooks/useSEO";
-import { Rocket, Target, BarChart3, Lightbulb, Search, ArrowRight, CheckCircle, TrendingUp, Users } from "lucide-react";
+import { Target, BarChart3, Lightbulb, Search, ArrowRight, CheckCircle, TrendingUp, Users } from "lucide-react";
 import { Link } from "react-router-dom";
+import logoEntreprendsFeminin from "@/assets/logo-entreprends-feminin.png";
+import logoImmotech from "@/assets/logo-immotech.png";
+import logoSportpreneuriat from "@/assets/logo-sportpreneuriat.png";
+import logoDreamers from "@/assets/logo-dreamers.png";
 
 const accompagnements = [
   {
