@@ -9,6 +9,7 @@ import Vision from "./pages/Vision";
 import Expertises from "./pages/Expertises";
 import Strategie from "./pages/Strategie";
 import Coaching from "./pages/Coaching";
+import Entrepreneuriat from "./pages/Entrepreneuriat";
 import Reseau from "./pages/Reseau";
 import Blog from "./pages/Blog";
 import About from "./pages/About";
