@@ -40,7 +40,7 @@ const faqItems = [
   { q: "Quels sujets de conférence proposez-vous ?", a: "Leadership contemporain, management à l'ère de l'IA, gouvernance, recrutement, Value Selling, management éthique, égalité professionnelle, gestion de crise et entrepreneuriat." },
   { q: "Intervenez-vous en entreprise et dans les écoles ?", a: "Oui. Management Skills intervient aussi bien en entreprise (séminaires, formations, ateliers stratégiques) que dans l'enseignement supérieur (écoles de commerce, universités, institutions)." },
   { q: "Proposez-vous des formations en leadership et management ?", a: "Oui. Management Skills est un organisme de formation déclaré (n° 32 59 13455 59). Nos formations couvrent le leadership, la stratégie, le management, l'entrepreneuriat et la performance commerciale." },
-  { q: "Où êtes-vous basé et intervenez-vous partout en France ?", a: "Basé à Pérenchies, près de Lille (Hauts-de-France), Management Skills intervient sur l'ensemble du territoire français et à l'international." },
+  { q: "Où êtes-vous basé et intervenez-vous partout en France ?", a: "Basé à Lille (Hauts-de-France), Management Skills intervient sur l'ensemble du territoire français et à l'international." },
 ];
 
 const Index = () => {
