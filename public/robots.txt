@@ -12,3 +12,5 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://strategy-coach-forge.lovable.app/sitemap.xml

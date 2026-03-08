@@ -5,13 +5,12 @@ import logoMs from "@/assets/logo-ms.png";
 
 const navLinks = [
   { to: "/", label: "Accueil" },
-  { to: "/vision", label: "Vision" },
   { to: "/expertises", label: "Expertises" },
+  { to: "/coaching", label: "Dirigeants" },
+  { to: "/entrepreneuriat", label: "Entrepreneurs" },
   { to: "/strategie", label: "Stratégie" },
-  { to: "/coaching", label: "Coaching" },
-  { to: "/entrepreneuriat", label: "Entrepreneuriat" },
-  { to: "/reseau", label: "Réseau" },
-  { to: "/blog", label: "Blog" },
+  { to: "/formations", label: "Formations" },
+  { to: "/vision", label: "Vision" },
   { to: "/a-propos", label: "À propos" },
   { to: "/contact", label: "Contact" },
 ];
@@ -50,6 +49,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
             className="lg:hidden text-off-white"
+            aria-label="Menu de navigation"
           >
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -79,7 +79,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
       <footer className="bg-anthracite text-off-white/60 py-12">
         <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2.5 mb-3">
                 <img src={logoMs} alt="Management Skills" className="h-8 w-8 rounded-full" />
@@ -87,24 +87,46 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                   MANAGEMENT <span className="text-fuchsia">SKILLS</span>
                 </h4>
               </div>
-              <p className="text-sm leading-relaxed">
-                Cabinet d'expertise en leadership, stratégie et transformation des organisations. Conseil, formation et coaching exécutif au service des dirigeants et des managers.
+              <p className="text-sm leading-relaxed mb-3">
+                Cabinet d'expertise en leadership, stratégie et management.
+                Conseil, formation, coaching exécutif et conférences.
+              </p>
+              <p className="text-xs text-off-white/40">
+                Organisme de formation déclaré<br />
+                N° 32 59 13455 59
               </p>
             </div>
             <div>
-              <h5 className="font-heading font-semibold text-off-white text-sm mb-3">Navigation</h5>
+              <h5 className="font-heading font-semibold text-off-white text-sm mb-3">Accompagnement</h5>
               <div className="flex flex-col gap-1.5">
-                {navLinks.slice(0, 5).map((link) => (
-                  <Link key={link.to} to={link.to} className="text-sm hover:text-off-white transition-colors">
-                    {link.label}
-                  </Link>
-                ))}
+                <Link to="/coaching" className="text-sm hover:text-off-white transition-colors">Dirigeants & CODIR</Link>
+                <Link to="/entrepreneuriat" className="text-sm hover:text-off-white transition-colors">Entrepreneurs</Link>
+                <Link to="/strategie" className="text-sm hover:text-off-white transition-colors">Conseil stratégique</Link>
+                <Link to="/formations" className="text-sm hover:text-off-white transition-colors">Formations & Conférences</Link>
+              </div>
+            </div>
+            <div>
+              <h5 className="font-heading font-semibold text-off-white text-sm mb-3">Le cabinet</h5>
+              <div className="flex flex-col gap-1.5">
+                <Link to="/expertises" className="text-sm hover:text-off-white transition-colors">Expertises</Link>
+                <Link to="/vision" className="text-sm hover:text-off-white transition-colors">Vision & méthode</Link>
+                <Link to="/a-propos" className="text-sm hover:text-off-white transition-colors">À propos</Link>
+                <Link to="/reseau" className="text-sm hover:text-off-white transition-colors">Réseau d'experts</Link>
               </div>
             </div>
             <div>
               <h5 className="font-heading font-semibold text-off-white text-sm mb-3">Contact</h5>
               <p className="text-sm">hello@mmanagement.fr</p>
               <p className="text-sm">07 81 33 39 09</p>
+              <p className="text-sm mt-2">Pérenchies (59840)<br />Hauts-de-France</p>
+              <a
+                href="https://www.linkedin.com/in/fabienberruyer"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm hover:text-off-white transition-colors mt-2 inline-block"
+              >
+                LinkedIn →
+              </a>
             </div>
           </div>
           <div className="border-t border-off-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
