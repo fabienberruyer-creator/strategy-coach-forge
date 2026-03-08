@@ -1,6 +1,6 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import useSEO from "@/hooks/useSEO";
-import { Linkedin, Award, BookOpen, Users, Briefcase, Target, Globe, ArrowRight, CheckCircle } from "lucide-react";
+import { Linkedin, Award, BookOpen, Users, Briefcase, Target, Globe, ArrowRight, CheckCircle, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import fabienImage from "@/assets/fabien-portrait.jpg";
 
@@ -50,6 +50,15 @@ const About = () => {
                 >
                   <Linkedin className="w-4 h-4" />
                   Profil LinkedIn
+                </a>
+                <a
+                  href="https://wa.me/33781333909"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full inline-flex items-center justify-center gap-2 text-sm px-6 py-3 rounded-md font-semibold text-white bg-[#25D366] hover:bg-[#1ebe5b] transition-colors"
+                >
+                  <MessageCircle className="w-4 h-4" />
+                  WhatsApp
                 </a>
               </div>
             </div>
