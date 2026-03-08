@@ -4,7 +4,7 @@ import heroImage from "@/assets/hero-leadership.jpg";
 import fabienImage from "@/assets/fabien-portrait.jpg";
 import {
   Target, TrendingUp, Shield, BarChart3,
-  Lightbulb, Globe, Trophy, RefreshCw, Award, Users, ArrowRight
+  Lightbulb, Globe, Trophy, RefreshCw, Award, Users, ArrowRight, BookOpen
 } from "lucide-react";
 
 const expertises = [
