@@ -10,6 +10,7 @@ const navLinks = [
   { to: "/entrepreneuriat", label: "Entrepreneurs" },
   { to: "/strategie", label: "Stratégie" },
   { to: "/formations", label: "Formations" },
+  { to: "/universites", label: "Universités & Business Schools" },
   { to: "/vision", label: "Vision" },
   { to: "/a-propos", label: "À propos" },
   { to: "/contact", label: "Contact" },

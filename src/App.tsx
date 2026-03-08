@@ -12,6 +12,7 @@ import Coaching from "./pages/Coaching";
 import Entrepreneuriat from "./pages/Entrepreneuriat";
 import Formations from "./pages/Formations";
 import ThemeDetail from "./pages/ThemeDetail";
+import Universites from "./pages/Universites";
 import Reseau from "./pages/Reseau";
 import Blog from "./pages/Blog";
 import About from "./pages/About";
@@ -37,6 +38,7 @@ const App = () => (
             <Route path="/entrepreneuriat" element={<Entrepreneuriat />} />
             <Route path="/formations" element={<Formations />} />
             <Route path="/formations/:slug" element={<ThemeDetail />} />
+            <Route path="/universites" element={<Universites />} />
             <Route path="/reseau" element={<Reseau />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/a-propos" element={<About />} />
