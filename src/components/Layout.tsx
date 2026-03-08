@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import logoMs from "@/assets/logo-ms.png";
+import WelcomePopup from "@/components/WelcomePopup";
 
 const navLinks = [
   { to: "/", label: "Accueil" },
