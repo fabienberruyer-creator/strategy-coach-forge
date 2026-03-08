@@ -99,9 +99,14 @@ const About = () => {
                 et compréhension fine des dynamiques humaines. Il ne théorise pas : il écoute, il analyse,
                 il structure et il accompagne la mise en mouvement.
               </p>
-              <p className="text-foreground/80 font-body text-lg leading-relaxed">
+              <p className="text-foreground/80 font-body text-lg leading-relaxed mb-4">
                 Basé à Lille (Hauts-de-France), il intervient sur l'ensemble
                 du territoire français et à l'international.
+              </p>
+              <p className="text-foreground/80 font-body text-lg leading-relaxed">
+                En dehors de ses activités professionnelles, Fabien est également coach d'équipe jeune
+                de Basket-Ball — une passion qui nourrit sa vision du collectif, du leadership
+                et de la transmission.
               </p>
             </div>
           </div>
