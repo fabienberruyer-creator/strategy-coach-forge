@@ -2,9 +2,10 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import useSEO from "@/hooks/useSEO";
 import {
   Mic, BookOpen, GraduationCap, Users, Lightbulb, ArrowRight,
-  Award, Target, Brain, Shield, BarChart3, Scale, Globe
+  Award, Target
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { themesData } from "@/data/themes";
 
 const formats = [
   { icon: Mic, title: "Conférence", desc: "Prise de parole structurée devant un public large. Format adapté aux événements d'entreprise, séminaires et assemblées." },
@@ -13,23 +14,6 @@ const formats = [
   { icon: Users, title: "Masterclass", desc: "Session approfondie sur un thème spécifique. Format interactif combinant apport théorique et mise en pratique." },
   { icon: Target, title: "Séminaire & atelier stratégique", desc: "Travail collectif sur les enjeux d'une organisation. Format participatif orienté vers la prise de décision." },
   { icon: GraduationCap, title: "Intervention académique", desc: "Cours et ateliers en écoles de commerce, universités et programmes de formation continue." },
-];
-
-const themes = [
-  { icon: Target, label: "Leadership contemporain" },
-  { icon: Users, label: "Management des équipes" },
-  { icon: Shield, label: "Stratégie et prise de décision" },
-  { icon: BarChart3, label: "Recrutement et expérience candidat" },
-  { icon: Brain, label: "Management à l'ère de l'IA" },
-  { icon: Lightbulb, label: "Gouvernance et CODIR" },
-  { icon: Mic, label: "Entrepreneuriat" },
-  { icon: Scale, label: "Value Selling & SPIN Selling" },
-  { icon: Globe, label: "Égalité professionnelle" },
-  { icon: Award, label: "Management éthique" },
-  { icon: BookOpen, label: "Culture économique, managériale et juridique" },
-  { icon: Scale, label: "Négociation" },
-  
-  { icon: Globe, label: "Culture générale africaine" },
 ];
 
 const Formations = () => {
@@ -106,11 +90,17 @@ const Formations = () => {
             </p>
           </div>
           <div className="grid sm:grid-cols-2 gap-4">
-            {themes.map((t, i) => (
-              <div key={i} className="flex items-center gap-4 p-4 rounded-lg border border-border bg-card animate-on-scroll" style={{ transitionDelay: `${i * 50}ms` }}>
-                <t.icon className="w-6 h-6 text-primary flex-shrink-0" />
-                <span className="font-heading font-semibold text-foreground text-sm">{t.label}</span>
-              </div>
+            {themesData.map((t, i) => (
+              <Link
+                key={t.slug}
+                to={`/formations/${t.slug}`}
+                className="flex items-center gap-4 p-4 rounded-lg border border-border bg-card hover-lift group animate-on-scroll"
+                style={{ transitionDelay: `${i * 50}ms` }}
+              >
+                <t.icon className="w-6 h-6 text-primary flex-shrink-0 group-hover:text-fuchsia transition-colors" />
+                <span className="font-heading font-semibold text-foreground text-sm flex-1">{t.label}</span>
+                <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:text-fuchsia group-hover:translate-x-1 transition-all" />
+              </Link>
             ))}
           </div>
         </div>
