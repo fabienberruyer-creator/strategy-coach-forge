@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import AnimatedCounter from "@/components/AnimatedCounter";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import useSEO from "@/hooks/useSEO";
 import heroImage from "@/assets/hero-leadership.jpg";
