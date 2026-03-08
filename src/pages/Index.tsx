@@ -12,18 +12,18 @@ import {
 import { useState } from "react";
 
 const expertises = [
-  { icon: Target, title: "Leadership", desc: "Développer un leadership structuré, incarné et mobilisateur pour diriger avec clarté et cohérence." },
-  { icon: TrendingUp, title: "Stratégie d'entreprise", desc: "Analyser, positionner et piloter la trajectoire stratégique de l'organisation." },
-  { icon: Users, title: "Management des équipes", desc: "Structurer les pratiques managériales pour renforcer l'engagement et la performance collective." },
-  { icon: Briefcase, title: "Gouvernance & CODIR", desc: "Clarifier les rôles, fluidifier la prise de décision et renforcer le fonctionnement des instances dirigeantes." },
-  { icon: UserCheck, title: "Recrutement & expérience candidat", desc: "Attirer, évaluer et fidéliser les talents avec une approche structurée et différenciante." },
-  { icon: Lightbulb, title: "Entrepreneuriat", desc: "Accompagner les fondateurs dans la structuration, le positionnement et la croissance de leur activité." },
-  { icon: Shield, title: "Gestion de crise", desc: "Décider avec méthode en situation d'incertitude, de pression et de complexité organisationnelle." },
-  { icon: BarChart3, title: "Value Selling", desc: "Structurer l'approche commerciale autour de la création de valeur plutôt que du prix." },
-  { icon: Crosshair, title: "Méthode SPIN", desc: "Maîtriser le questionnement stratégique pour identifier les vrais enjeux des clients." },
-  { icon: Scale, title: "Management éthique", desc: "Intégrer la responsabilité, l'équité et la transparence au cœur des pratiques managériales." },
-  { icon: Globe, title: "Égalité professionnelle", desc: "Promouvoir l'égalité femmes-hommes comme levier de performance et d'attractivité." },
-  { icon: Brain, title: "IA & transformation du travail", desc: "Comprendre et anticiper l'impact de l'intelligence artificielle sur le management et les organisations." },
+  { icon: Target, title: "Leadership", desc: "Développer un leadership structuré, incarné et mobilisateur pour diriger avec clarté et cohérence.", slug: "leadership" },
+  { icon: TrendingUp, title: "Stratégie d'entreprise", desc: "Analyser, positionner et piloter la trajectoire stratégique de l'organisation.", slug: "strategie-entreprise" },
+  { icon: Users, title: "Management des équipes", desc: "Structurer les pratiques managériales pour renforcer l'engagement et la performance collective.", slug: "management-equipes" },
+  { icon: Briefcase, title: "Gouvernance & CODIR", desc: "Clarifier les rôles, fluidifier la prise de décision et renforcer le fonctionnement des instances dirigeantes.", slug: "gouvernance-codir" },
+  { icon: UserCheck, title: "Recrutement & expérience candidat", desc: "Attirer, évaluer et fidéliser les talents avec une approche structurée et différenciante.", slug: "recrutement-experience-candidat" },
+  { icon: Lightbulb, title: "Entrepreneuriat", desc: "Accompagner les fondateurs dans la structuration, le positionnement et la croissance de leur activité.", slug: "entrepreneuriat" },
+  { icon: Shield, title: "Gestion de crise", desc: "Décider avec méthode en situation d'incertitude, de pression et de complexité organisationnelle.", slug: "gestion-crise" },
+  { icon: BarChart3, title: "Value Selling", desc: "Structurer l'approche commerciale autour de la création de valeur plutôt que du prix.", slug: "value-selling" },
+  { icon: Crosshair, title: "Méthode SPIN", desc: "Maîtriser le questionnement stratégique pour identifier les vrais enjeux des clients.", slug: "methode-spin" },
+  { icon: Scale, title: "Management éthique", desc: "Intégrer la responsabilité, l'équité et la transparence au cœur des pratiques managériales.", slug: "management-ethique" },
+  { icon: Globe, title: "Égalité professionnelle", desc: "Promouvoir l'égalité femmes-hommes comme levier de performance et d'attractivité.", slug: "egalite-professionnelle" },
+  { icon: Brain, title: "IA & transformation du travail", desc: "Comprendre et anticiper l'impact de l'intelligence artificielle sur le management et les organisations.", slug: "ia-transformation" },
 ];
 
 const methode = [
