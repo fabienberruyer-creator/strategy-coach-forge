@@ -159,11 +159,19 @@ const Index = () => {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
             {expertises.map((exp, i) => (
-              <div key={i} className="card-expertise animate-on-scroll" style={{ transitionDelay: `${i * 50}ms` }}>
-                <exp.icon className="w-7 h-7 text-primary mb-3" />
-                <h3 className="font-heading text-sm font-bold text-foreground mb-2">{exp.title}</h3>
-                <p className="text-xs text-muted-foreground font-body leading-relaxed">{exp.desc}</p>
-              </div>
+              <Link
+                key={i}
+                to={`/expertises#${exp.slug}`}
+                className="card-expertise group animate-on-scroll"
+                style={{ transitionDelay: `${i * 50}ms` }}
+              >
+                <exp.icon className="w-7 h-7 text-primary mb-3 group-hover:text-fuchsia transition-colors" />
+                <h3 className="font-heading text-sm font-bold text-foreground mb-2 group-hover:text-primary transition-colors">{exp.title}</h3>
+                <p className="text-xs text-muted-foreground font-body leading-relaxed mb-3">{exp.desc}</p>
+                <span className="text-xs font-heading font-semibold text-primary inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                  En savoir plus <ArrowRight className="w-3 h-3" />
+                </span>
+              </Link>
             ))}
           </div>
           <div className="text-center mt-12 animate-on-scroll">
