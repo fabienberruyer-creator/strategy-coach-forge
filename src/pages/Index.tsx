@@ -64,7 +64,7 @@ const Index = () => {
             Cabinet d'expertise
           </p>
           <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold text-off-white mb-6 animate-fade-in-up tracking-tight">
-            LEADERSHIP <span className="text-fuchsia">•</span> STRATÉGIE <span className="text-fuchsia">•</span> MANAGEMENT
+            LEADERSHIP <span className="text-fuchsia">•</span> STRATÉGIE <span className="text-fuchsia">•</span> MANAGEMENT <span className="text-fuchsia">•</span> ENTREPRENEURIAT
           </h1>
           <p className="text-off-white/80 text-lg md:text-xl font-body mb-10 animate-fade-in-up max-w-3xl mx-auto leading-relaxed" style={{ animationDelay: "0.15s" }}>
             Nous accompagnons dirigeants, entrepreneurs et organisations à prendre des décisions stratégiques dans des environnements complexes.
