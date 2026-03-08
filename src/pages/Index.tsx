@@ -219,7 +219,7 @@ const Index = () => {
               </p>
               <p className="text-foreground/70 font-body leading-relaxed mb-6">
                 Certifié par les Nations Unies pour la promotion de l'égalité femmes-hommes.
-                Intervenant en écoles de commerce et institutions. Basé à Pérenchies, près de Lille (Hauts-de-France).
+                Intervenant en écoles de commerce et institutions. Basé à Lille (Hauts-de-France).
               </p>
               <Link to="/a-propos" className="text-primary font-heading font-semibold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all">
                 Découvrir le parcours complet <ArrowRight className="w-4 h-4" />
