@@ -12,18 +12,18 @@ import {
 import { useState } from "react";
 
 const expertises = [
-  { icon: Target, title: "Leadership", desc: "Développer un leadership structuré, incarné et mobilisateur pour diriger avec clarté et cohérence." },
-  { icon: TrendingUp, title: "Stratégie d'entreprise", desc: "Analyser, positionner et piloter la trajectoire stratégique de l'organisation." },
-  { icon: Users, title: "Management des équipes", desc: "Structurer les pratiques managériales pour renforcer l'engagement et la performance collective." },
-  { icon: Briefcase, title: "Gouvernance & CODIR", desc: "Clarifier les rôles, fluidifier la prise de décision et renforcer le fonctionnement des instances dirigeantes." },
-  { icon: UserCheck, title: "Recrutement & expérience candidat", desc: "Attirer, évaluer et fidéliser les talents avec une approche structurée et différenciante." },
-  { icon: Lightbulb, title: "Entrepreneuriat", desc: "Accompagner les fondateurs dans la structuration, le positionnement et la croissance de leur activité." },
-  { icon: Shield, title: "Gestion de crise", desc: "Décider avec méthode en situation d'incertitude, de pression et de complexité organisationnelle." },
-  { icon: BarChart3, title: "Value Selling", desc: "Structurer l'approche commerciale autour de la création de valeur plutôt que du prix." },
-  { icon: Crosshair, title: "Méthode SPIN", desc: "Maîtriser le questionnement stratégique pour identifier les vrais enjeux des clients." },
-  { icon: Scale, title: "Management éthique", desc: "Intégrer la responsabilité, l'équité et la transparence au cœur des pratiques managériales." },
-  { icon: Globe, title: "Égalité professionnelle", desc: "Promouvoir l'égalité femmes-hommes comme levier de performance et d'attractivité." },
-  { icon: Brain, title: "IA & transformation du travail", desc: "Comprendre et anticiper l'impact de l'intelligence artificielle sur le management et les organisations." },
+  { icon: Target, title: "Leadership", desc: "Développer un leadership structuré, incarné et mobilisateur pour diriger avec clarté et cohérence.", slug: "leadership" },
+  { icon: TrendingUp, title: "Stratégie d'entreprise", desc: "Analyser, positionner et piloter la trajectoire stratégique de l'organisation.", slug: "strategie-entreprise" },
+  { icon: Users, title: "Management des équipes", desc: "Structurer les pratiques managériales pour renforcer l'engagement et la performance collective.", slug: "management-equipes" },
+  { icon: Briefcase, title: "Gouvernance & CODIR", desc: "Clarifier les rôles, fluidifier la prise de décision et renforcer le fonctionnement des instances dirigeantes.", slug: "gouvernance-codir" },
+  { icon: UserCheck, title: "Recrutement & expérience candidat", desc: "Attirer, évaluer et fidéliser les talents avec une approche structurée et différenciante.", slug: "recrutement-experience-candidat" },
+  { icon: Lightbulb, title: "Entrepreneuriat", desc: "Accompagner les fondateurs dans la structuration, le positionnement et la croissance de leur activité.", slug: "entrepreneuriat" },
+  { icon: Shield, title: "Gestion de crise", desc: "Décider avec méthode en situation d'incertitude, de pression et de complexité organisationnelle.", slug: "gestion-crise" },
+  { icon: BarChart3, title: "Value Selling", desc: "Structurer l'approche commerciale autour de la création de valeur plutôt que du prix.", slug: "value-selling" },
+  { icon: Crosshair, title: "Méthode SPIN", desc: "Maîtriser le questionnement stratégique pour identifier les vrais enjeux des clients.", slug: "methode-spin" },
+  { icon: Scale, title: "Management éthique", desc: "Intégrer la responsabilité, l'équité et la transparence au cœur des pratiques managériales.", slug: "management-ethique" },
+  { icon: Globe, title: "Égalité professionnelle", desc: "Promouvoir l'égalité femmes-hommes comme levier de performance et d'attractivité.", slug: "egalite-professionnelle" },
+  { icon: Brain, title: "IA & transformation du travail", desc: "Comprendre et anticiper l'impact de l'intelligence artificielle sur le management et les organisations.", slug: "ia-transformation" },
 ];
 
 const methode = [
@@ -55,9 +55,13 @@ const Index = () => {
     <>
       {/* Hero */}
       <section className="relative min-h-[92vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${heroImage})` }} />
+        <div className="absolute inset-0 bg-cover bg-center scale-105 animate-[scale-up_20s_ease-in-out_infinite_alternate]" style={{ backgroundImage: `url(${heroImage})` }} />
         <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,hsl(310_70%_50%/0.15),transparent_60%)]" />
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+          <p className="text-fuchsia font-heading font-semibold text-sm uppercase tracking-[0.3em] mb-6 animate-fade-in-up">
+            Cabinet d'expertise
+          </p>
           <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold text-off-white mb-6 animate-fade-in-up tracking-tight">
             LEADERSHIP <span className="text-fuchsia">•</span> STRATÉGIE <span className="text-fuchsia">•</span> MANAGEMENT
           </h1>
@@ -67,6 +71,18 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style={{ animationDelay: "0.35s" }}>
             <Link to="/contact" className="btn-hero-primary">Prendre contact</Link>
             <Link to="/expertises" className="btn-hero-outline">Découvrir les expertises</Link>
+          </div>
+          <div className="grid grid-cols-3 gap-8 max-w-lg mx-auto mt-16 animate-fade-in-up" style={{ animationDelay: "0.55s" }}>
+            {[
+              { value: "15+", label: "Années d'expérience" },
+              { value: "12", label: "Domaines d'expertise" },
+              { value: "100%", label: "Sur mesure" },
+            ].map((stat, i) => (
+              <div key={i} className="text-center">
+                <p className="font-heading text-2xl md:text-3xl font-bold text-fuchsia">{stat.value}</p>
+                <p className="text-off-white/60 text-xs font-body mt-1">{stat.label}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -159,11 +175,19 @@ const Index = () => {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
             {expertises.map((exp, i) => (
-              <div key={i} className="card-expertise animate-on-scroll" style={{ transitionDelay: `${i * 50}ms` }}>
-                <exp.icon className="w-7 h-7 text-primary mb-3" />
-                <h3 className="font-heading text-sm font-bold text-foreground mb-2">{exp.title}</h3>
-                <p className="text-xs text-muted-foreground font-body leading-relaxed">{exp.desc}</p>
-              </div>
+              <Link
+                key={i}
+                to={`/expertises#${exp.slug}`}
+                className="card-expertise group animate-on-scroll"
+                style={{ transitionDelay: `${i * 50}ms` }}
+              >
+                <exp.icon className="w-7 h-7 text-primary mb-3 group-hover:text-fuchsia transition-colors" />
+                <h3 className="font-heading text-sm font-bold text-foreground mb-2 group-hover:text-primary transition-colors">{exp.title}</h3>
+                <p className="text-xs text-muted-foreground font-body leading-relaxed mb-3">{exp.desc}</p>
+                <span className="text-xs font-heading font-semibold text-primary inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                  En savoir plus <ArrowRight className="w-3 h-3" />
+                </span>
+              </Link>
             ))}
           </div>
           <div className="text-center mt-12 animate-on-scroll">
