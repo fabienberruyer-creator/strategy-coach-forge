@@ -7,7 +7,7 @@ import {
   Target, TrendingUp, Shield, BarChart3, Lightbulb, Globe,
   RefreshCw, Award, Users, ArrowRight, BookOpen, Briefcase,
   Mic, UserCheck, Scale, Brain, Crosshair, MessageSquare,
-  GraduationCap, Building2, ChevronDown
+  GraduationCap, Building2, ChevronDown, Trophy
 } from "lucide-react";
 import { useState } from "react";
 
@@ -117,7 +117,7 @@ const Index = () => {
               À qui s'adresse <span className="gradient-text">Management Skills</span> ?
             </h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
                 icon: Briefcase,
@@ -135,10 +135,17 @@ const Index = () => {
               },
               {
                 icon: GraduationCap,
-                title: "Écoles, institutions, clubs sportifs & associations",
-                items: ["Conférences et interventions académiques", "Formations sur mesure pour clubs sportifs et associations", "Décryptage des transformations du management", "Apport d'expertise et pédagogie"],
+                title: "Écoles & institutions",
+                items: ["Conférences et interventions académiques", "Formations sur mesure", "Décryptage des transformations du management", "Apport d'expertise et pédagogie"],
                 link: "/formations",
                 cta: "Demander une intervention",
+              },
+              {
+                icon: Trophy,
+                title: "Clubs sportifs & associations",
+                items: ["Formation en management et leadership", "Gouvernance et structuration associative", "Accompagnement stratégique sur mesure", "Développement des compétences managériales"],
+                link: "/formations",
+                cta: "Découvrir nos formations",
               },
             ].map((bloc, i) => (
               <div key={i} className="card-expertise flex flex-col animate-on-scroll" style={{ transitionDelay: `${i * 120}ms` }}>
