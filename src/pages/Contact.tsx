@@ -64,13 +64,13 @@ const Contact = () => {
                   Lille, Hauts-de-France
                 </div>
                 <a
-                  href="https://www.linkedin.com/in/fabienberruyer"
+                  href="https://www.linkedin.com/company/managementskills/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-foreground/80 font-body hover:text-primary transition-colors"
                 >
                   <Linkedin className="w-5 h-5 text-primary flex-shrink-0" />
-                  LinkedIn – Fabien Berruyer
+                  LinkedIn – Management Skills
                 </a>
               </div>
 
