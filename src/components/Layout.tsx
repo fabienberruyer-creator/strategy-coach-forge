@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import logoMs from "@/assets/logo-ms.png";
+import WelcomePopup from "@/components/WelcomePopup";
 
 const navLinks = [
   { to: "/", label: "Accueil" },
@@ -76,6 +77,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         )}
       </header>
 
+      <WelcomePopup />
       <main className="flex-1 pt-16">{children}</main>
 
       <footer className="bg-anthracite text-off-white/60 py-12">
