@@ -1,4 +1,5 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import useSEO from "@/hooks/useSEO";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import networkImage from "@/assets/network-experts.jpg";
