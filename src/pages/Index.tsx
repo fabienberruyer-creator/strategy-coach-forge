@@ -74,7 +74,7 @@ const Index = () => {
           </div>
           <div className="grid grid-cols-3 gap-8 max-w-lg mx-auto mt-16 animate-fade-in-up" style={{ animationDelay: "0.55s" }}>
             {[
-              { value: "15+", label: "Années d'expérience" },
+              { value: "10+", label: "Années d'expérience" },
               { value: "12", label: "Domaines d'expertise" },
               { value: "100%", label: "Sur mesure" },
             ].map((stat, i) => (
