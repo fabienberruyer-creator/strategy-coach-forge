@@ -389,7 +389,7 @@ const Index = () => {
             },
             telephone: "+33781333909",
             email: "hello@mmanagement.fr",
-            areaServed: ["Lille", "Pérenchies", "Hauts-de-France", "France"],
+            areaServed: ["Lille", "Hauts-de-France", "France"],
             serviceType: ["Coaching de dirigeants", "Conseil en stratégie", "Formation en leadership", "Conférences management"],
           }),
         }}

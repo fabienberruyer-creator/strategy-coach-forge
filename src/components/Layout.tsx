@@ -118,7 +118,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               <h5 className="font-heading font-semibold text-off-white text-sm mb-3">Contact</h5>
               <p className="text-sm">hello@mmanagement.fr</p>
               <p className="text-sm">07 81 33 39 09</p>
-              <p className="text-sm mt-2">Pérenchies (59840)<br />Hauts-de-France</p>
+              <p className="text-sm mt-2">Lille<br />Hauts-de-France</p>
               <a
                 href="https://www.linkedin.com/in/fabienberruyer"
                 target="_blank"
