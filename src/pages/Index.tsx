@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import AnimatedCounter from "@/components/AnimatedCounter";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import useSEO from "@/hooks/useSEO";
 import heroImage from "@/assets/hero-leadership.jpg";
@@ -73,16 +74,24 @@ const Index = () => {
             <Link to="/expertises" className="btn-hero-outline">Découvrir les expertises</Link>
           </div>
           <div className="grid grid-cols-3 gap-8 max-w-lg mx-auto mt-16 animate-fade-in-up" style={{ animationDelay: "0.55s" }}>
-            {[
-              { value: "10+", label: "Années d'expérience" },
-              { value: "12", label: "Domaines d'expertise" },
-              { value: "100%", label: "Sur mesure" },
-            ].map((stat, i) => (
-              <div key={i} className="text-center">
-                <p className="font-heading text-2xl md:text-3xl font-bold text-fuchsia">{stat.value}</p>
-                <p className="text-off-white/60 text-xs font-body mt-1">{stat.label}</p>
-              </div>
-            ))}
+            <div className="text-center">
+              <p className="font-heading text-2xl md:text-3xl font-bold text-fuchsia">
+                <AnimatedCounter end={10} suffix="+" />
+              </p>
+              <p className="text-off-white/60 text-xs font-body mt-1">Années d'expérience</p>
+            </div>
+            <div className="text-center">
+              <p className="font-heading text-2xl md:text-3xl font-bold text-fuchsia">
+                <AnimatedCounter end={12} />
+              </p>
+              <p className="text-off-white/60 text-xs font-body mt-1">Domaines d'expertise</p>
+            </div>
+            <div className="text-center">
+              <p className="font-heading text-2xl md:text-3xl font-bold text-fuchsia">
+                <AnimatedCounter end={100} suffix="%" />
+              </p>
+              <p className="text-off-white/60 text-xs font-body mt-1">Sur mesure</p>
+            </div>
           </div>
         </div>
       </section>
