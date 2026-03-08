@@ -1,6 +1,6 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import useSEO from "@/hooks/useSEO";
-import { Linkedin, Award, BookOpen, Users, Briefcase, Target, Globe, ArrowRight, CheckCircle, MessageCircle } from "lucide-react";
+import { Linkedin, Award, BookOpen, Users, Briefcase, Target, Globe, ArrowRight, CheckCircle, MessageCircle, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 import fabienImage from "@/assets/fabien-portrait.jpg";
 
@@ -59,6 +59,13 @@ const About = () => {
                 >
                   <MessageCircle className="w-4 h-4" />
                   WhatsApp
+                </a>
+                <a
+                  href="mailto:direction@mmanagement.fr"
+                  className="w-full inline-flex items-center justify-center gap-2 text-sm px-6 py-3 rounded-md font-semibold text-white bg-[#EA4335] hover:bg-[#d33426] transition-colors"
+                >
+                  <Mail className="w-4 h-4" />
+                  Email
                 </a>
               </div>
             </div>
