@@ -47,7 +47,7 @@ const Index = () => {
   useScrollAnimation();
   useSEO({
     title: "Management Skills – Coach dirigeant, consultant stratégie et management | Lille, Hauts-de-France",
-    description: "Cabinet d'expertise en leadership, stratégie et management. Accompagnement de dirigeants, entrepreneurs et organisations. Conseil, formation, coaching exécutif. Lille, Pérenchies, Hauts-de-France.",
+    description: "Cabinet d'expertise en leadership, stratégie et management. Accompagnement de dirigeants, entrepreneurs et organisations. Conseil, formation, coaching exécutif. Lille, Hauts-de-France.",
   });
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
