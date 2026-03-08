@@ -1,6 +1,6 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import useSEO from "@/hooks/useSEO";
-import { Linkedin, Award, BookOpen, Users, Briefcase, Target, Globe, ArrowRight, CheckCircle } from "lucide-react";
+import { Linkedin, Award, BookOpen, Users, Briefcase, Target, Globe, ArrowRight, CheckCircle, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import fabienImage from "@/assets/fabien-portrait.jpg";
 
