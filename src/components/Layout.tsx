@@ -9,6 +9,7 @@ const navLinks = [
   { to: "/expertises", label: "Expertises" },
   { to: "/strategie", label: "Stratégie" },
   { to: "/coaching", label: "Coaching" },
+  { to: "/entrepreneuriat", label: "Entrepreneuriat" },
   { to: "/reseau", label: "Réseau" },
   { to: "/blog", label: "Blog" },
   { to: "/a-propos", label: "À propos" },
