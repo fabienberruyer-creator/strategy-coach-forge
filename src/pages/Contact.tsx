@@ -7,7 +7,7 @@ const Contact = () => {
   useScrollAnimation();
   useSEO({
     title: "Contact – Management Skills | Prendre rendez-vous avec Fabien Berruyer",
-    description: "Contactez Management Skills pour un accompagnement de dirigeant, une formation, une conférence ou un conseil en stratégie. Basé à Pérenchies, près de Lille (Hauts-de-France).",
+    description: "Contactez Management Skills pour un accompagnement de dirigeant, une formation, une conférence ou un conseil en stratégie. Basé à Lille (Hauts-de-France).",
   });
 
   const [formData, setFormData] = useState({
