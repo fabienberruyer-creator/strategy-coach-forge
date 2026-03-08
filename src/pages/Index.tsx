@@ -62,7 +62,7 @@ const Index = () => {
             LEADERSHIP <span className="text-fuchsia">•</span> STRATÉGIE <span className="text-fuchsia">•</span> MANAGEMENT
           </h1>
           <p className="text-off-white/80 text-lg md:text-xl font-body mb-10 animate-fade-in-up max-w-3xl mx-auto leading-relaxed" style={{ animationDelay: "0.15s" }}>
-            J'accompagne dirigeants, entrepreneurs et organisations à prendre des décisions stratégiques dans des environnements complexes.
+            Nous accompagnons dirigeants, entrepreneurs et organisations à prendre des décisions stratégiques dans des environnements complexes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style={{ animationDelay: "0.35s" }}>
             <Link to="/contact" className="btn-hero-primary">Prendre contact</Link>
