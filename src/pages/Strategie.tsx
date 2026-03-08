@@ -1,42 +1,32 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { CheckCircle, ArrowRight, AlertTriangle, Flame, Search, Map, Rocket, Settings, RefreshCw } from "lucide-react";
+import { ArrowRight, Search, Map, Rocket, Settings, RefreshCw } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const items = [
   {
     icon: Search,
     title: "Analyse stratégique",
-    desc: "Diagnostic de l'environnement concurrentiel, identification des forces et des vulnérabilités, cartographie des opportunités.",
-    pain: "Décisions basées sur l'intuition, méconnaissance du paysage concurrentiel, angles morts stratégiques.",
-    impact: "Investissements mal orientés, positionnement fragile et vulnérabilité face aux disruptions du marché.",
+    text: "Beaucoup de dirigeants prennent des décisions stratégiques sur la base d'intuitions ou d'informations parcellaires. Ils connaissent leur métier, mais pas nécessairement leur environnement concurrentiel réel. Les angles morts s'accumulent — et quand la disruption arrive, il est souvent trop tard pour réagir. Nous réalisons un diagnostic complet de l'environnement concurrentiel, identifions les forces et les vulnérabilités, et cartographions les opportunités avant que d'autres ne les saisissent.",
   },
   {
     icon: Map,
     title: "Positionnement concurrentiel",
-    desc: "Définition d'un positionnement différenciant et construction d'avantages compétitifs durables.",
-    pain: "Offre indifférenciée, guerre des prix, difficulté à justifier la valeur ajoutée.",
-    impact: "Érosion des marges, perte de clients au profit de concurrents mieux positionnés et image de marque diluée.",
+    text: "Quand une entreprise ne sait pas expliquer en une phrase pourquoi un client devrait la choisir plutôt qu'un concurrent, elle a un problème de positionnement. Et ce problème se traduit mécaniquement par une guerre des prix, une érosion des marges et une image de marque qui se dilue. Nous travaillons avec les dirigeants pour définir un positionnement clair, différenciant et défendable — un positionnement qui crée de la valeur au lieu de courir après le volume.",
   },
   {
     icon: Rocket,
     title: "Développement d'activité",
-    desc: "Structuration de plans de croissance, diversification des revenus et conquête de nouveaux marchés.",
-    pain: "Croissance en plateau, dépendance à un seul marché ou client, difficulté à scaler.",
-    impact: "Stagnation du chiffre d'affaires, fragilité économique et incapacité à financer l'innovation.",
+    text: "La croissance ne se décrète pas. Pourtant, de nombreuses organisations restent dépendantes d'un seul marché, d'un seul client historique ou d'un modèle économique qui ne scale pas. Quand le marché se retourne, la fragilité devient visible. Nous structurons des plans de croissance réalistes et ambitieux — diversification des revenus, conquête de nouveaux marchés, montée en gamme — pour construire une trajectoire de développement solide et durable.",
   },
   {
     icon: Settings,
     title: "Structuration des organisations",
-    desc: "Optimisation des structures organisationnelles, clarification des rôles et mise en place de processus de gouvernance efficaces.",
-    pain: "Rôles flous, doublons de responsabilités, gouvernance informelle et décisions opaques.",
-    impact: "Conflits internes, lenteur d'exécution et frustration des équipes qui ne savent pas qui décide quoi.",
+    text: "Dans beaucoup d'entreprises en croissance, l'organisation n'a pas suivi le rythme. Les rôles se chevauchent, la gouvernance reste informelle, et personne ne sait vraiment qui décide quoi. Le résultat : des conflits larvés, une lenteur d'exécution et une frustration qui mine la motivation des équipes. Nous clarifions les structures, les rôles et les processus de gouvernance — pour que l'organisation devienne un accélérateur de performance, pas un frein.",
   },
   {
     icon: RefreshCw,
     title: "Pilotage de transformation",
-    desc: "Conduite du changement, gestion des résistances et déploiement de nouvelles pratiques à l'échelle de l'organisation.",
-    pain: "Résistance au changement, projets de transformation enlisés, fatigue organisationnelle.",
-    impact: "Transformations avortées, investissements perdus et cynisme généralisé face aux projets futurs.",
+    text: "Les projets de transformation échouent rarement par manque de vision. Ils échouent parce que les résistances n'ont pas été anticipées, parce que le rythme de déploiement est inadapté, ou parce que les équipes n'ont pas été embarquées. Et chaque transformation ratée rend la suivante plus difficile — le cynisme s'installe, la confiance s'érode. Nous pilotons le changement avec méthode : diagnostic des résistances, séquençage des étapes, mobilisation des relais internes et accompagnement dans la durée.",
   },
 ];
 
@@ -61,53 +51,38 @@ const Strategie = () => {
       </section>
 
       <section className="section-padding">
-        <div className="container mx-auto max-w-4xl">
-          <div className="animate-on-scroll">
+        <div className="container mx-auto max-w-3xl">
+          <div className="animate-on-scroll mb-12">
             <p className="text-lg font-body leading-relaxed text-foreground/80 mb-4">
-              La stratégie ne se limite pas à un exercice intellectuel. Elle consiste à analyser un environnement complexe,
-              prendre des décisions structurantes et mobiliser les équipes autour d'une vision claire et partagée.
+              La stratégie ne se limite pas à un exercice intellectuel réalisé une fois par an en séminaire. Elle consiste à analyser un environnement en permanence, prendre des décisions structurantes — parfois inconfortables — et mobiliser les équipes autour d'une direction claire.
             </p>
-            <p className="text-lg font-body leading-relaxed text-foreground/80 mb-4">
-              Trop d'organisations confondent activité et stratégie. Elles multiplient les projets sans hiérarchiser,
-              s'épuisent dans l'opérationnel sans prendre de recul. Management Skills intervient pour redonner du sens,
-              de la structure et de la direction.
-            </p>
-            <p className="text-lg font-body leading-relaxed text-foreground/80 mb-10">
-              Management Skills accompagne les organisations dans cinq dimensions clés :
+            <p className="text-lg font-body leading-relaxed text-foreground/80">
+              Or, trop d'organisations confondent activité et stratégie. Elles multiplient les projets sans hiérarchiser, s'épuisent dans l'opérationnel sans jamais prendre de recul. Quand la question « quelle est notre stratégie ? » met mal à l'aise un comité de direction, c'est le signe qu'il est temps d'agir.
             </p>
           </div>
 
-          <div className="space-y-6">
+          <h2 className="font-heading text-2xl font-bold text-foreground mb-8 animate-on-scroll">
+            Cinq dimensions clés d'accompagnement
+          </h2>
+
+          <div className="space-y-8">
             {items.map((item, i) => (
-              <div key={i} className="bg-background rounded-2xl border border-border p-6 animate-on-scroll" style={{ transitionDelay: `${i * 100}ms` }}>
-                <div className="flex gap-4 mb-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                    <item.icon className="w-6 h-6 text-primary" />
+              <div key={i} className="animate-on-scroll" style={{ transitionDelay: `${i * 80}ms` }}>
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center mt-1">
+                    <item.icon className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-heading font-bold text-foreground text-lg mb-1">{item.title}</h3>
-                    <p className="text-muted-foreground font-body leading-relaxed">{item.desc}</p>
+                    <h3 className="font-heading font-bold text-foreground text-lg mb-2">{item.title}</h3>
+                    <p className="text-foreground/75 font-body leading-relaxed">{item.text}</p>
                   </div>
                 </div>
-                <div className="grid md:grid-cols-2 gap-3 pl-16">
-                  <div className="flex items-start gap-2">
-                    <AlertTriangle className="w-4 h-4 text-destructive flex-shrink-0 mt-0.5" />
-                    <p className="text-sm font-body text-foreground/70">
-                      <span className="font-semibold">Problème :</span> {item.pain}
-                    </p>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <Flame className="w-4 h-4 text-orange-500 flex-shrink-0 mt-0.5" />
-                    <p className="text-sm font-body text-foreground/70">
-                      <span className="font-semibold">Impact :</span> {item.impact}
-                    </p>
-                  </div>
-                </div>
+                {i < items.length - 1 && <div className="border-b border-border mt-8" />}
               </div>
             ))}
           </div>
 
-          <div className="mt-12 animate-on-scroll">
+          <div className="mt-14 animate-on-scroll">
             <Link to="/contact" className="btn-hero-primary inline-flex items-center gap-2">
               Discuter de votre stratégie <ArrowRight className="w-4 h-4" />
             </Link>
