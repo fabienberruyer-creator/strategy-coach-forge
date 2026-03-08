@@ -118,8 +118,19 @@ const Expertises = () => {
   useScrollAnimation();
   useSEO({
     title: "Expertises – Management Skills | Leadership, stratégie, management, gouvernance",
-    description: "12 domaines d'expertise : leadership, stratégie, management, gouvernance, recrutement, entrepreneuriat, gestion de crise, Value Selling, SPIN, management éthique, égalité professionnelle, IA.",
+    description: "15 domaines d'expertise : leadership, stratégie, management, gouvernance, recrutement, entrepreneuriat, gestion de crise, Value Selling, SPIN, management éthique, égalité professionnelle, IA.",
   });
+
+  // Scroll to hash on mount
+  React.useEffect(() => {
+    const hash = window.location.hash.replace("#", "");
+    if (hash) {
+      setTimeout(() => {
+        const el = document.getElementById(hash);
+        if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 400);
+    }
+  }, []);
 
   return (
     <>
