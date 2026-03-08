@@ -77,6 +77,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         )}
       </header>
 
+      <WelcomePopup />
       <main className="flex-1 pt-16">{children}</main>
 
       <footer className="bg-anthracite text-off-white/60 py-12">
