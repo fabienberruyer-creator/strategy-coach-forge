@@ -132,29 +132,57 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Certification */}
+      {/* Organisme de formation & Certification */}
       <section className="section-padding section-dark">
-        <div className="container mx-auto max-w-4xl animate-on-scroll">
-          <div className="grid md:grid-cols-5 gap-10 items-center">
-            <div className="md:col-span-1 flex justify-center">
-              <Award className="w-20 h-20 text-fuchsia" />
+        <div className="container mx-auto max-w-4xl space-y-16">
+          {/* Organisme de formation */}
+          <div className="animate-on-scroll">
+            <div className="grid md:grid-cols-5 gap-10 items-center">
+              <div className="md:col-span-1 flex justify-center">
+                <BookOpen className="w-20 h-20 text-green-deep" />
+              </div>
+              <div className="md:col-span-4">
+                <h2 className="font-heading text-3xl md:text-4xl font-bold text-off-white mb-6">
+                  Organisme de <span className="text-green-deep">formation</span> reconnu
+                </h2>
+                <p className="text-off-white/70 font-body text-lg leading-relaxed mb-4">
+                  Management Skills est un <strong className="text-off-white">organisme de formation professionnelle déclaré</strong> auprès
+                  de la Préfecture de la région Hauts-de-France sous le numéro <strong className="text-off-white">32 59 13455 59</strong>.
+                </p>
+                <p className="text-off-white/50 font-body leading-relaxed mb-4">
+                  Ce statut garantit la conformité de nos programmes aux exigences réglementaires de la formation professionnelle continue
+                  et permet à nos clients de bénéficier de dispositifs de financement (OPCO, plans de développement des compétences, CPF selon éligibilité).
+                </p>
+                <p className="text-off-white/50 font-body leading-relaxed">
+                  Nos formations couvrent le leadership, le management stratégique, l'entrepreneuriat, la performance commerciale et la transformation des organisations.
+                </p>
+              </div>
             </div>
-            <div className="md:col-span-4">
-              <h2 className="font-heading text-3xl md:text-4xl font-bold text-off-white mb-6">
-                Une expertise reconnue au niveau <span className="text-fuchsia">international</span>
-              </h2>
-              <p className="text-off-white/70 font-body text-lg leading-relaxed mb-4">
-                Le dirigeant de Management Skills est certifié par les <strong className="text-off-white">Nations Unies</strong> dans le domaine
-                de la promotion de l'égalité des genres et de l'égalité professionnelle.
-              </p>
-              <p className="text-off-white/50 font-body leading-relaxed mb-4">
-                Cette certification internationale atteste d'une expertise reconnue en matière d'égalité professionnelle,
-                de diversité et d'inclusion — des enjeux devenus centraux dans la gouvernance des organisations modernes.
-              </p>
-              <p className="text-off-white/50 font-body leading-relaxed">
-                Elle renforce l'engagement de Management Skills à promouvoir un leadership responsable,
-                éthique et inclusif auprès de l'ensemble de ses clients et partenaires.
-              </p>
+          </div>
+
+          {/* Certification internationale */}
+          <div className="animate-on-scroll">
+            <div className="grid md:grid-cols-5 gap-10 items-center">
+              <div className="md:col-span-1 flex justify-center">
+                <Award className="w-20 h-20 text-fuchsia" />
+              </div>
+              <div className="md:col-span-4">
+                <h2 className="font-heading text-3xl md:text-4xl font-bold text-off-white mb-6">
+                  Une expertise reconnue au niveau <span className="text-fuchsia">international</span>
+                </h2>
+                <p className="text-off-white/70 font-body text-lg leading-relaxed mb-4">
+                  Le dirigeant de Management Skills est certifié par les <strong className="text-off-white">Nations Unies</strong> dans le domaine
+                  de la promotion de l'égalité des genres et de l'égalité professionnelle.
+                </p>
+                <p className="text-off-white/50 font-body leading-relaxed mb-4">
+                  Cette certification internationale atteste d'une expertise reconnue en matière d'égalité professionnelle,
+                  de diversité et d'inclusion — des enjeux devenus centraux dans la gouvernance des organisations modernes.
+                </p>
+                <p className="text-off-white/50 font-body leading-relaxed">
+                  Elle renforce l'engagement de Management Skills à promouvoir un leadership responsable,
+                  éthique et inclusif auprès de l'ensemble de ses clients et partenaires.
+                </p>
+              </div>
             </div>
           </div>
         </div>
