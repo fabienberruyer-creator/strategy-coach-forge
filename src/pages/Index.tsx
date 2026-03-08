@@ -7,7 +7,7 @@ import {
   Target, TrendingUp, Shield, BarChart3, Lightbulb, Globe,
   RefreshCw, Award, Users, ArrowRight, BookOpen, Briefcase,
   Mic, UserCheck, Scale, Brain, Crosshair, MessageSquare,
-  GraduationCap, Building2, ChevronDown
+  GraduationCap, Building2, ChevronDown, Trophy
 } from "lucide-react";
 import { useState } from "react";
 
