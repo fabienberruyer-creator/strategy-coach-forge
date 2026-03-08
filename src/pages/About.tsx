@@ -63,7 +63,8 @@ const About = () => {
 
               <p className="text-foreground/80 font-body text-lg leading-relaxed mb-4">
                 Fabien Berruyer accompagne depuis plus de 15 ans des dirigeants, des entrepreneurs et des organisations
-                confrontés à des enjeux de management, de stratégie et de transformation. Son parcours ne se résume pas
+                confrontés à des enjeux de management, de stratégie et de transformation. Reconnu en 2025 parmi les coachs carrière
+                les plus influents de France (classement Favikon), son parcours ne se résume pas
                 à une expertise théorique : il s'est construit dans le terrain, au contact des réalités opérationnelles
                 des entreprises et des institutions.
               </p>
