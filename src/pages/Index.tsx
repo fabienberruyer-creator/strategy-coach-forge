@@ -135,8 +135,8 @@ const Index = () => {
               },
               {
                 icon: GraduationCap,
-                title: "Écoles, institutions & organisations",
-                items: ["Conférences et interventions académiques", "Formations sur mesure", "Décryptage des transformations du management", "Apport d'expertise et pédagogie"],
+                title: "Écoles, institutions, clubs sportifs & associations",
+                items: ["Conférences et interventions académiques", "Formations sur mesure pour clubs sportifs et associations", "Décryptage des transformations du management", "Apport d'expertise et pédagogie"],
                 link: "/formations",
                 cta: "Demander une intervention",
               },
