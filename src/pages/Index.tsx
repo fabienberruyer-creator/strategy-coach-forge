@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import AnimatedCounter from "@/components/AnimatedCounter";
+import ImmersiveReveal from "@/components/ImmersiveReveal";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import useSEO from "@/hooks/useSEO";
 import heroImage from "@/assets/hero-leadership.jpg";
@@ -54,6 +55,7 @@ const Index = () => {
 
   return (
     <>
+      <ImmersiveReveal />
       {/* Hero */}
       <section className="relative min-h-[92vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center scale-105 animate-[scale-up_20s_ease-in-out_infinite_alternate]" style={{ backgroundImage: `url(${heroImage})` }} />
