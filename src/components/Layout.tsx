@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 import logoMs from "@/assets/logo-ms.png";
 import WelcomePopup from "@/components/WelcomePopup";
 
-const navLinks = [
+const navLinks: Array<{ to: string; label: string; accent?: boolean }> = [
   { to: "/", label: "Accueil" },
   { to: "/expertises", label: "Expertises" },
   { to: "/formations", label: "Formations" },
@@ -14,7 +14,7 @@ const navLinks = [
   { to: "/universites", label: "Enseignement supérieur" },
   { to: "/vision", label: "Vision" },
   { to: "/a-propos", label: "À propos" },
-  { to: "/podcast", label: "Podcast" },
+  { to: "/podcast", label: "Podcast", accent: true },
   { to: "/contact", label: "Contact" },
 ];
 
