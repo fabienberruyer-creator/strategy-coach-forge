@@ -14,6 +14,7 @@ const navLinks = [
   { to: "/universites", label: "Enseignement supérieur" },
   { to: "/vision", label: "Vision" },
   { to: "/a-propos", label: "À propos" },
+  { to: "/podcast", label: "Podcast" },
   { to: "/contact", label: "Contact" },
 ];
 
@@ -37,7 +38,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               <Link
                 key={link.to}
                 to={link.to}
-                className={`px-3 py-2 text-sm font-body transition-colors duration-200 rounded-md ${
+                className={`px-2 py-2 text-xs 2xl:text-sm font-body transition-colors duration-200 rounded-md ${
                   location.pathname === link.to
                     ? "text-fuchsia"
                     : "text-off-white/70 hover:text-off-white"
@@ -115,6 +116,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 <Link to="/vision" className="text-sm hover:text-off-white transition-colors">Vision & méthode</Link>
                 <Link to="/a-propos" className="text-sm hover:text-off-white transition-colors">À propos</Link>
                 <Link to="/reseau" className="text-sm hover:text-off-white transition-colors">Réseau d'experts</Link>
+                <Link to="/podcast" className="text-sm hover:text-off-white transition-colors">Podcast</Link>
               </div>
             </div>
             <div>

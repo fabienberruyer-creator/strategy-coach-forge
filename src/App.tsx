@@ -15,6 +15,7 @@ import ThemeDetail from "./pages/ThemeDetail";
 import Universites from "./pages/Universites";
 import Reseau from "./pages/Reseau";
 import Blog from "./pages/Blog";
+import Podcasts from "./pages/Podcasts";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import MentionsLegales from "./pages/MentionsLegales";
@@ -41,6 +42,7 @@ const App = () => (
             <Route path="/universites" element={<Universites />} />
             <Route path="/reseau" element={<Reseau />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/podcast" element={<Podcasts />} />
             <Route path="/a-propos" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/mentions-legales" element={<MentionsLegales />} />
