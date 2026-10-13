@@ -39,9 +39,13 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 key={link.to}
                 to={link.to}
                 className={`px-2 py-2 text-xs 2xl:text-sm font-body transition-colors duration-200 rounded-md ${
-                  location.pathname === link.to
-                    ? "text-fuchsia"
-                    : "text-off-white/70 hover:text-off-white"
+                  link.accent
+                    ? `font-heading font-semibold uppercase tracking-wider text-fuchsia-light hover:text-fuchsia ${
+                        location.pathname === link.to ? "underline underline-offset-[6px] decoration-2" : ""
+                      }`
+                    : location.pathname === link.to
+                      ? "text-fuchsia"
+                      : "text-off-white/70 hover:text-off-white"
                 }`}
               >
                 {link.label}
@@ -66,9 +70,13 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 to={link.to}
                 onClick={() => setMobileOpen(false)}
                 className={`py-2 text-sm font-body transition-colors ${
-                  location.pathname === link.to
-                    ? "text-fuchsia"
-                    : "text-off-white/70"
+                  link.accent
+                    ? `font-heading font-semibold uppercase tracking-wider text-fuchsia-light hover:text-fuchsia ${
+                        location.pathname === link.to ? "underline underline-offset-4 decoration-2" : ""
+                      }`
+                    : location.pathname === link.to
+                      ? "text-fuchsia"
+                      : "text-off-white/70"
                 }`}
               >
                 {link.label}
