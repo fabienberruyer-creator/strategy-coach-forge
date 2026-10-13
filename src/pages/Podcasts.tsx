@@ -10,7 +10,7 @@ const Podcasts = () => {
 
   useSEO({
     title: "Podcasts stratégie et segmentation commerciale | Management Skills",
-    description: "Écoutez les podcasts Management Skills : diagnostic stratégique du cas Djibs, DAS, PESTEL, Porter, SWOT scoré et segmentation commerciale, IPO, IPA, ICP et persona.",
+    description: "Écoutez les podcasts Management Skills : diagnostic stratégique puis segmentation commerciale, appuyés sur l’étude de cas Djibs — DAS, PESTEL, Porter, SWOT scoré, IPO, IPA, ICP et persona.",
     canonical: "https://strategy-coach-forge.lovable.app/podcast",
   });
 

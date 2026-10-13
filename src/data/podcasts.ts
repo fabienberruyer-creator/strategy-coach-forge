@@ -15,11 +15,11 @@ export const podcasts = [
   {
     number: 2,
     title: "Segmentation commerciale : de la théorie à la pratique",
-    category: "Développement commercial",
+    category: "Stratégie commerciale",
     duration: "6 min 34 s",
     audio: segmentationAudio.url,
-    description: "S’adresser à un marché ne signifie pas s’adresser à tous ses clients de la même façon. Cet épisode explore la segmentation commerciale et les notions d’IPO et d’IPA pour éclairer la manière de structurer l’analyse des clients et les choix de ciblage.",
+    description: "S’adresser à un marché ne signifie pas s’adresser à tous ses clients de la même façon. Poursuivant l’analyse conduite sur le cas Djibs, cet épisode explore la segmentation commerciale et les notions d’IPO et d’IPA pour éclairer la manière de structurer l’analyse des clients et les choix de ciblage.",
     takeaway: "Il revient également sur la différence entre ICP et persona : distinguer le profil de client idéal de la compréhension des interlocuteurs permet de relier les priorités commerciales à une connaissance plus précise des clients.",
-    topics: ["Segmentation commerciale", "IPO", "IPA", "ICP", "Persona"],
+    topics: ["Cas Djibs", "Segmentation commerciale", "IPO", "IPA", "ICP", "Persona"],
   },
 ];
