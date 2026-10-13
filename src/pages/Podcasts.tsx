@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { Clock3, Headphones } from "lucide-react";
 import logoMs from "@/assets/logo-ms.png";
-import { podcasts } from "@/data/podcasts";
+import { podcasts, rubriques } from "@/data/podcasts";
 import useSEO from "@/hooks/useSEO";
 
 const Podcasts = () => {
@@ -24,8 +24,18 @@ const Podcasts = () => {
           </div>
           <h1 className="text-4xl md:text-5xl text-off-white mb-6 tracking-normal">Podcast</h1>
           <p className="font-body text-lg text-off-white/70 max-w-3xl leading-relaxed">
-            Stratégie et développement commercial : des analyses pour mettre les outils en perspective et éclairer les décisions, à partir de situations concrètes.
+            Stratégie commerciale et management : des analyses pour mettre les outils en perspective et éclairer les décisions, à partir de situations concrètes.
           </p>
+          <p className="font-body text-base text-off-white/80 max-w-3xl leading-relaxed mt-5 border-l-2 border-fuchsia pl-4">
+            Ces podcasts ont été strictement générés sur les formations réellement dispensées par Management Skills.
+          </p>
+          <nav aria-label="Rubriques du podcast" className="flex flex-wrap gap-3 mt-8">
+            {rubriques.map((r) => (
+              <a key={r.id} href={`#${r.id}`} className="px-4 py-2 rounded-full border border-fuchsia/50 text-fuchsia-light text-sm font-heading font-semibold hover:bg-fuchsia/10 transition-colors">
+                {r.name}
+              </a>
+            ))}
+          </nav>
         </div>
       </section>
 
