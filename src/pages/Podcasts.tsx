@@ -10,7 +10,7 @@ const Podcasts = () => {
 
   useSEO({
     title: "Podcasts stratégie commerciale et management | Management Skills",
-    description: "Écoutez les podcasts Management Skills, issus des formations dispensées : stratégie commerciale (cas Djibs, PESTEL, Porter, SWOT, segmentation) et management (Katz, Mintzberg, Kotter, motivation).",
+    description: "Écoutez les podcasts Management Skills, issus des formations dispensées : stratégie commerciale (cas Djibs, PESTEL, Porter, SWOT, segmentation) et management (Katz, Mintzberg, Kotter, motivation, méthode D-MOTIV).",
     canonical: "https://strategy-coach-forge.lovable.app/podcast",
   });
 

@@ -5,3 +5,5 @@
 # Podcast rubriques
 - [x] Two rubriques (Stratégie commerciale, Management), disclaimer under title, Management episodes 1-2.
 - [x] Add Management episode 3 "L'Art de l'Adaptation Managériale".
+- [x] Add Management episode 4 "Diagnostiquer avant d'agir" (méthode D-MOTIV).
+- [x] Verify Podcast page display and playback of all five episodes.
