@@ -3,6 +3,7 @@ import segmentationAudio from "@/assets/podcast-segmentation.mp3.asset.json";
 import fondementsAudio from "@/assets/podcast-management-fondements.mp3.asset.json";
 import individusAudio from "@/assets/podcast-management-individus.mp3.asset.json";
 import adaptationAudio from "@/assets/podcast-management-adaptation.mp3.asset.json";
+import diagnosticAudio from "@/assets/podcast-management-diagnostic-motivation.mp3.asset.json";
 
 export type PodcastRubrique = "Stratégie commerciale" | "Management";
 
@@ -95,5 +96,17 @@ export const podcasts: PodcastEpisode[] = [
     description: "Il n’existe pas de style de management absolument bon : l’efficacité dépend de la situation. Cet épisode s’appuie sur cette logique contingente et sur le management situationnel de Hersey et Blanchard, qui adapte le style à la compétence et à l’engagement de chaque collaborateur.",
     takeaway: "Il détaille ensuite la délégation professionnelle autour de six paramètres — objet, objectif, périmètre, moyens, reporting et régulation —, distingue contrôle et micromanagement, illustre la confiance formalisée par le cas MAIF, puis présente le modèle de Vroom et Yetton et le management différencié.",
     topics: ["Logique contingente", "Hersey et Blanchard", "Délégation", "Contrôle et micromanagement", "Cas MAIF", "Vroom et Yetton", "Management différencié"],
+  },
+  {
+    id: "management-4",
+    number: 4,
+    rubrique: "Management",
+    title: "Diagnostiquer avant d’agir : une approche méthodique de la motivation et de la performance managériale",
+    category: "Management",
+    duration: "7 min 44 s",
+    audio: diagnosticAudio.url,
+    description: "La motivation n’est ni un trait de caractère ni une simple envie de travailler : c’est un processus dynamique et contextuel. Pour agir sur l’engagement et la performance, le manager doit raisonner en diagnosticien : observer des faits vérifiables, mesurer les écarts et identifier les causes réelles, en distinguant les déficits de compétences, les insuffisances de moyens, le manque de clarté des objectifs et les facteurs proprement motivationnels.",
+    takeaway: "Les modèles de Vroom, Herzberg, Deci et Ryan, Adams et Bandura éclairent les attentes, la reconnaissance, l’autonomie, l’équité et le sentiment d’efficacité personnelle. La méthode D-MOTIV — Décrire, Mesurer, Orienter, Trouver le mécanisme, Intervenir, Vérifier — relie ensuite diagnostic, choix des leviers, contractualisation des actions et évaluation de leurs effets : un symptôme n’est pas une cause, et une intervention n’est pertinente qu’après diagnostic.",
+    topics: ["D-MOTIV", "Vroom", "Herzberg", "Deci et Ryan", "Adams", "Bandura", "Diagnostic et leviers", "Amélioration continue"],
   },
 ];
