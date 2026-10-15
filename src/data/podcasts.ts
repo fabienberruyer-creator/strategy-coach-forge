@@ -2,6 +2,7 @@ import djibsAudio from "@/assets/podcast-djibs.mp3.asset.json";
 import segmentationAudio from "@/assets/podcast-segmentation.mp3.asset.json";
 import fondementsAudio from "@/assets/podcast-management-fondements.mp3.asset.json";
 import individusAudio from "@/assets/podcast-management-individus.mp3.asset.json";
+import adaptationAudio from "@/assets/podcast-management-adaptation.mp3.asset.json";
 
 export type PodcastRubrique = "Stratégie commerciale" | "Management";
 
@@ -82,5 +83,17 @@ export const podcasts: PodcastEpisode[] = [
     description: "Manager, c’est d’abord comprendre ce qui détermine un comportement : compétences, motivations, perceptions et contexte. Cet épisode pose cette formule et met en garde contre l’erreur fondamentale d’attribution décrite par Ross, qui conduit à expliquer les conduites par la personne plutôt que par la situation.",
     takeaway: "Il passe en revue les grandes théories de la motivation — Maslow, Herzberg, Deci et Ryan, Vroom, Adams — les illustre par des cas d’entreprises (Netflix, Microsoft, Toyota) et oppose gestion individuelle et gestion systémique.",
     topics: ["Comportement", "Erreur d’attribution", "Maslow", "Herzberg", "Deci et Ryan", "Vroom", "Adams", "Netflix", "Microsoft", "Toyota"],
+  },
+  {
+    id: "management-3",
+    number: 3,
+    rubrique: "Management",
+    title: "L’Art de l’Adaptation Managériale",
+    category: "Management",
+    duration: "5 min 52 s",
+    audio: adaptationAudio.url,
+    description: "Il n’existe pas de style de management absolument bon : l’efficacité dépend de la situation. Cet épisode s’appuie sur cette logique contingente et sur le management situationnel de Hersey et Blanchard, qui adapte le style à la compétence et à l’engagement de chaque collaborateur.",
+    takeaway: "Il détaille ensuite la délégation professionnelle autour de six paramètres — objet, objectif, périmètre, moyens, reporting et régulation —, distingue contrôle et micromanagement, illustre la confiance formalisée par le cas MAIF, puis présente le modèle de Vroom et Yetton et le management différencié.",
+    topics: ["Logique contingente", "Hersey et Blanchard", "Délégation", "Contrôle et micromanagement", "Cas MAIF", "Vroom et Yetton", "Management différencié"],
   },
 ];
